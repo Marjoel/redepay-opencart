@@ -1,7 +1,7 @@
 # Rede Pay
-## Módulo de Integração com o Opencart
+## Módulo de Pagamento para o Opencart
 
 Descrição em breve.
 
-# Contribuidores
+## Contribuidores
 Marjoel Moreira (@MarjoeM)
