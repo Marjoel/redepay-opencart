@@ -24,8 +24,8 @@ Veja o módulo no site oficial do Opencart, [clique aqui](https://www.opencart.c
 
 ## Contribua
 
-Faça um fork do repositório, realize suas alterações e [crie um pull request](https://github.com/opencart/opencart/wiki/Creating-a-pull-request "Clique aqui para saber como criar um pull request").<br>
-Você está tendo algum problema com o módulo? [crie uma issue](https://help.github.com/articles/creating-an-issue/ "Clique aqui para saber como criar uma issue").
+Faça um fork do repositório, realize suas alterações e [crie um pull request](https://github.com/Marjoel/redepay-opencart/pulls "Clique aqui para criar um pull request").<br>
+Você está tendo algum problema com o módulo? [crie uma issue](https://github.com/Marjoel/redepay-opencart/issues").
 
 ### Contribuidores
 
