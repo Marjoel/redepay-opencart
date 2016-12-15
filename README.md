@@ -1,5 +1,5 @@
-[<img src="https://www.userede.com.br/Paginas/Redepay/venda/como-integrar/logos/horizontal/horizontal_laranja.png" width="100%"/>](https://www.useredepay.com.br)
-Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.opencart.com/).
+[<img src="https://stc.useredepay.com.br/portal/assets/institucional/img/logo.svg" width="100%"/>](https://www.useredepay.com.br "Rede Pay")
+Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.opencart.com/ "Opencart").
 
 
 ### Notas & Compatibilidade
@@ -20,9 +20,9 @@ Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.open
 
 ## Contribua
 
-Faça um fork do repositório, faça suas alterações e [envie seu pull request](https://github.com/opencart/opencart/wiki/Creating-a-pull-request).<br>
-Você está tendo algum problema com o módulo? [crie uma issue](https://help.github.com/articles/creating-an-issue/).
+Faça um fork do repositório, realize suas alterações e [crie um pull request](https://github.com/opencart/opencart/wiki/Creating-a-pull-request "Clique aqui para saber como criar um pull request").<br>
+Você está tendo algum problema com o módulo? [crie uma issue](https://help.github.com/articles/creating-an-issue/ "Clique aqui para saber como criar uma issue").
 
 ### Contribuidores
 
-[Marjoel Moreira](https://www.marjoel.com/) (@[MarjoeM](https://www.twitter.com/MarjoelM))
+[Marjoel Moreira](https://www.marjoel.com/ "Marjoel Moreira") (@[MarjoeM](https://www.twitter.com/MarjoelM "Twitter"))
