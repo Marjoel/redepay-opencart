@@ -1,4 +1,4 @@
-# Rede Pay
+<img src="https://www.userede.com.br/Paginas/Redepay/venda/como-integrar/logos/horizontal/horizontal_laranja.png" width="100%"/>
 
 Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.opencart.com/).
 
