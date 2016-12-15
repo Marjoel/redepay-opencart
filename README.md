@@ -18,7 +18,7 @@ Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.open
 - [ ] Integração com a API de código de rastreio
 - [ ] Adicionar a opção de auto_start na configuração do admin
 - [ ] Adicionar valor mínimo para ativar o módulo
-- [ ] Adicionar valor mínimo para parcelamento
+- [ ] Adicionar valor mínimo para permitir o parcelamento
 
 ## Contribua
 
