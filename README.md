@@ -1,6 +1,6 @@
 [<p align="center"><img src="https://stc.useredepay.com.br/portal/assets/institucional/img/logo.svg" width="90%"/></p>](https://www.useredepay.com.br "Rede Pay")
 
-<p align="center">Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.opencart.com/ "Opencart")</p>.
+<p align="center">Módulo de pagamento para a plataforma de e-commerce Opencart</p>
 
 
 ### Notas & Compatibilidade
