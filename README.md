@@ -6,10 +6,9 @@ Módulo de Pagamento para o Opencart
 2.0.1.1
 
 ### Changelog
-##### 1.0
-Integração com API de pagamento.<br>
-Integração com API de notificação.<br>
-Adicionando compatibilidade com a versão 2.0.1.1 do opencart.<br>
+| Versão| Release Notes|
+| - | - | 
+| 1.0 | Integração com as APIs de pagamento e notificação, e adição da compatibilidade com a versão 2.0.1.1 do opencart. | 
 
 ## Contribuidores
 [Marjoel Moreira](https://www.marjoel.com/) (@[MarjoeM](https://www.twitter.com/MarjoelM))
