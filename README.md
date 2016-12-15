@@ -2,11 +2,10 @@
 Módulo de Pagamento para o Opencart
 
 
-### Compatibilidade
-O módulo de pagamento do Rede Pay para o Opencart é compatível com as seguintes versões do Opencart:<br>
+#### Compatibilidade
 2.0.1.1
 
-## Changelog
+### Changelog
 #### 1.0
   Integração com API de pagamento.<br>
   Integração com API de notificação.<br>
