@@ -13,9 +13,12 @@ Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.open
 ## To do
 
 - [ ] Melhorar os textos do módulo
-- [ ] Organizar melhor os campos de configuração no admin
+- [ ] Organizar melhor os campos de configuração do admin
 - [ ] Integração com a API de estorno
 - [ ] Integração com a API de código de rastreio
+- [ ] Adicionar a opção de auto_start na configuração do admin
+- [ ] Adicionar valor mínimo para ativar o módulo
+- [ ] Adicionar valor mínimo para parcelamento
 
 ## Contribua
 
