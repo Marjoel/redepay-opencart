@@ -10,7 +10,7 @@ Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.open
 | ------ | ----- | --------------- |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
-## To do
+## To dos
 
 - [ ] Melhorar os textos do módulo
 - [ ] Organizar melhor os campos de configuração do admin
