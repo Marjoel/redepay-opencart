@@ -4,10 +4,10 @@ Módulo de Pagamento para o Opencart
 
 
 
-### Changelog & Compatibilidade
+### Notas & Compatibilidade
 
-| Versão | Release Notes | Compatibilidade |
-| ------ | ------------- | --------------- |
+| Versão | Notas | Compatibilidade |
+| ------ | ----- | --------------- |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
 ## To dos
