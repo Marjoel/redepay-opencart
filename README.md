@@ -9,6 +9,8 @@
 | ------ | ----- | --------------- |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
+Veja o módulo no site oficial do Opencart, [clique aqui](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=28757 "Rede Pay").
+
 ## To dos
 
 - [ ] Melhorar os textos do módulo
