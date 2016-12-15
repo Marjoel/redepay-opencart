@@ -19,8 +19,10 @@ Módulo de Pagamento para o Opencart
 
 ## Contribua
 
-Faça um fork do repositório, faça suas alterações e [faça um pull request](https://github.com/opencart/opencart/wiki/Creating-a-pull-request).
+Faça um fork do repositório, faça suas alterações e [envie seu pull request](https://github.com/opencart/opencart/wiki/Creating-a-pull-request).<br>
 
 ### Contribuidores
 
 [Marjoel Moreira](https://www.marjoel.com/) (@[MarjoeM](https://www.twitter.com/MarjoelM))
+
+_Você está tendo algum problema com o módulo? [crie uma issue](https://help.github.com/articles/creating-an-issue/)_ 
