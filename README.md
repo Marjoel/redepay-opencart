@@ -10,7 +10,7 @@ Módulo de Pagamento para o Opencart
 | ------ | ----- | --------------- |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
-## To dos
+## To do
 
 - [ ] Melhorar os textos do módulo
 - [ ] Organizar melhor os campos de configuração no admin
