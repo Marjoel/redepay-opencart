@@ -8,7 +8,7 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
-| 1.1    | Melhorias nos textos na seção de admin do módulo. | 2.0.1.1 |
+| 1.1    | Melhorias nos textos na seção de configuração do módulo. | 2.0.1.1 |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
 Veja o módulo no site oficial do Opencart, [clique aqui](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=28757 "Rede Pay").
