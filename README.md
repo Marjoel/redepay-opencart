@@ -2,6 +2,7 @@
 
 <p align="center">Módulo de pagamento para a plataforma de e-commerce Opencart</p>
 
+```Importante! Este módulo é opensource e não possuí nenhum vínculo com a Rede ou Itaú.```
 
 ### Notas & Compatibilidade
 
