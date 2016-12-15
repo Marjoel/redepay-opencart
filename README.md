@@ -1,6 +1,6 @@
 # Rede Pay
 
-Módulo de Pagamento para o Opencart
+Módulo de pagamento para a plataforma de e-commerce [Opencart](https://www.opencart.com/)
 
 
 
