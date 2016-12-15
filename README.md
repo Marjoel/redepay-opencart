@@ -2,7 +2,7 @@
 Módulo de Pagamento para o Opencart
 
 
-## Compatibilidade
+### Compatibilidade
 2.0.1.1
 
 ## Changelog
