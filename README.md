@@ -8,7 +8,7 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
-| 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X. 2.2.X |
+| 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X, 2.2.X |
 | 1.1    | Melhorias nos textos na seção de configuração do módulo. | 2.0.1.1 |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
