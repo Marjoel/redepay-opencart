@@ -8,10 +8,11 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
+| 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X. 2.2.X |
 | 1.1    | Melhorias nos textos na seção de configuração do módulo. | 2.0.1.1 |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
 
-Veja o módulo no site oficial do Opencart, [clique aqui](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=28757 "Rede Pay").
+Faça download da versão estável do módulo através no site oficial do Opencart, [clique aqui](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=28757 "Rede Pay").
 
 ## To dos
 
@@ -21,6 +22,7 @@ Veja o módulo no site oficial do Opencart, [clique aqui](https://www.opencart.c
 - [ ] Adicionar a opção de auto_start na configuração do admin
 - [ ] Adicionar valor mínimo para ativar o módulo
 - [ ] Adicionar valor mínimo para permitir o parcelamento
+- [ ] Adicionar compatibilidade com outras versões do Opencart
 
 ## Contribua
 
