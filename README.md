@@ -17,7 +17,7 @@ Faça download da versão estável do módulo através no site oficial do Openca
 
 ## To dos
 
-- [ ] Integração com a API de estorno, estornar valor do pedido direito do admin.
+- [ ] Integração com a API de estorno, estornar valor do pedido direto do admin.
 - [ ] Integração com a API de código de rastreio, adicionar e remover código de rastreio direto do admin.
 - [ ] Adicionar compatibilidade com a versão 2.3 do Opencart
 
