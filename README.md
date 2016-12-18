@@ -8,6 +8,7 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
+| 1.3    | Organizando melhor os campos no painel de configuração, tornando os campos de telefone e complemento opcionais, adicionando valor mínimo para ativar o parcelamento, adicionando valor mínimo para as parcelas, adicionando valor mínimo para ativar o módulo. | 2.0.X, 2.1.X, 2.2.X |
 | 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X, 2.2.X |
 | 1.1    | Melhorias nos textos na seção de configuração do módulo. | 2.0.1.1 |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
@@ -16,13 +17,9 @@ Faça download da versão estável do módulo através no site oficial do Openca
 
 ## To dos
 
-- [ ] Organizar melhor os campos de configuração do admin
-- [ ] Integração com a API de estorno
-- [ ] Integração com a API de código de rastreio
-- [ ] Adicionar a opção de auto_start na configuração do admin
-- [ ] Adicionar valor mínimo para ativar o módulo
-- [ ] Adicionar valor mínimo para permitir o parcelamento
-- [ ] Adicionar compatibilidade com outras versões do Opencart
+- [ ] Integração com a API de estorno, estornar valor do pedido direito do admin.
+- [ ] Integração com a API de código de rastreio, adicionar e remover código de rastreio direto do admin.
+- [ ] Adicionar compatibilidade com a versão 2.3 do Opencart
 
 ## Contribua
 
