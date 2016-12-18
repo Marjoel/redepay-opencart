@@ -9,7 +9,7 @@ $_['text_success']        				= 'Sucesso: Você alterou com sucesso as configura
 $_['text_redepay']						= '<a href="https://www.useredepay.com.br" target="_blank"><img src="view/image/payment/redepay.png" alt="Rede Pay" title="Rede Pay" /></a>';
 $_['text_enabled']                 		= 'Habilitado';
 $_['text_disabled']                 	= 'Desabilitado';
-$_['text_edit_tokens']                 	= 'Tokens';
+$_['text_edit_tokens']                 	= 'Códigos de segurança';
 $_['text_edit_installments']            = 'Parcelamento';
 $_['text_edit_notifications']           = 'Notificações';
 $_['text_edit_redirects']           	= 'Redirecionamentos';

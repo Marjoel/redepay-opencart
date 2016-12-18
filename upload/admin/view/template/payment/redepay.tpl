@@ -4,9 +4,7 @@
 	}
 
 	#redepay-register {
-		margin-top: 20px;
-		margin-left: 35px;
-		margin-right: 35px;
+		margin: 35px 35px 0 35px;
 	}
 
 	#redepay-register img {
@@ -108,47 +106,6 @@
 						</div>
 					</div>
 
-					<!-- installments -->
-					<div class="panel panel-default panel-rede">
-						<div class="panel-heading">
-							<h3 class="panel-title"><i class="fa fa-pencil"></i> <?php echo $text_edit_installments; ?></h3>
-						</div>
-
-						<div class="panel-body">
-							<!-- max installments -->
-							<div class="form-group required">
-								<label class="col-sm-2 control-label" for="input-max-installments"><span data-toggle="tooltip" title="<?php echo $help_max_installments; ?>"><?php echo $entry_max_installments; ?></span></label>
-								<div class="col-sm-10">
-									<select name="redepay_max_installments" id="input-max-installments" class="form-control">
-										<?php foreach ($util_installments_range as $key => $value) : ?>
-											<?php if ($key == $redepay_max_installments) : ?>
-												<option value="<?php echo $key; ?>" selected="selected" ><?php echo $value; ?></option>
-											<?php  else : ?>
-												<option value="<?php echo $key; ?>" ><?php echo $value; ?></option>
-											<?php endif; ?>
-										<?php endforeach; ?>
-									</select>
-								</div>
-							</div>
-
-							<!-- min value for installment -->
-							<div class="form-group">
-								<label class="col-sm-2 control-label" for="input-min-value-installment"><span data-toggle="tooltip" title="<?php echo $help_min_value_installment; ?>"><?php echo $entry_min_value_installment; ?></span></label>
-								<div class="col-sm-10">
-									<input type="text" name="redepay_min_value_installment" value="<?php echo $redepay_min_value_installment; ?>" placeholder="<?php echo $entry_min_value_installment; ?>" id="input-min-value-installment" class="form-control" />
-								</div>
-							</div>
-
-							<!-- min installment value -->
-							<div class="form-group">
-								<label class="col-sm-2 control-label" for="input-min-installment-value"><span data-toggle="tooltip" title="<?php echo $help_min_installment_value; ?>"><?php echo $entry_min_installment_value; ?></span></label>
-								<div class="col-sm-10">
-									<input type="text" name="redepay_min_installment_value" value="<?php echo $redepay_min_installment_value; ?>" placeholder="<?php echo $entry_min_installment_value; ?>" id="input-min-installment-value" class="form-control" />
-								</div>
-							</div>
-						</div>
-					</div>
-
 					<!-- notifications -->
 					<div class="panel panel-default panel-rede">
 						<div class="panel-heading">
@@ -201,6 +158,47 @@
 											<?php echo $error_cancel_url; ?>
 										</div>
 									<?php } ?>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- installments -->
+					<div class="panel panel-default panel-rede">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-pencil"></i> <?php echo $text_edit_installments; ?></h3>
+						</div>
+
+						<div class="panel-body">
+							<!-- max installments -->
+							<div class="form-group required">
+								<label class="col-sm-2 control-label" for="input-max-installments"><span data-toggle="tooltip" title="<?php echo $help_max_installments; ?>"><?php echo $entry_max_installments; ?></span></label>
+								<div class="col-sm-10">
+									<select name="redepay_max_installments" id="input-max-installments" class="form-control">
+										<?php foreach ($util_installments_range as $key => $value) : ?>
+											<?php if ($key == $redepay_max_installments) : ?>
+												<option value="<?php echo $key; ?>" selected="selected" ><?php echo $value; ?></option>
+											<?php  else : ?>
+												<option value="<?php echo $key; ?>" ><?php echo $value; ?></option>
+											<?php endif; ?>
+										<?php endforeach; ?>
+									</select>
+								</div>
+							</div>
+
+							<!-- min value for installment -->
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="input-min-value-installment"><span data-toggle="tooltip" title="<?php echo $help_min_value_installment; ?>"><?php echo $entry_min_value_installment; ?></span></label>
+								<div class="col-sm-10">
+									<input type="text" name="redepay_min_value_installment" value="<?php echo $redepay_min_value_installment; ?>" placeholder="<?php echo $entry_min_value_installment; ?>" id="input-min-value-installment" class="form-control" />
+								</div>
+							</div>
+
+							<!-- min installment value -->
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="input-min-installment-value"><span data-toggle="tooltip" title="<?php echo $help_min_installment_value; ?>"><?php echo $entry_min_installment_value; ?></span></label>
+								<div class="col-sm-10">
+									<input type="text" name="redepay_min_installment_value" value="<?php echo $redepay_min_installment_value; ?>" placeholder="<?php echo $entry_min_installment_value; ?>" id="input-min-installment-value" class="form-control" />
 								</div>
 							</div>
 						</div>

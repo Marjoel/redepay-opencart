@@ -35,11 +35,6 @@ class ControllerPaymentRedePay extends Controller {
 
 		$order_info = $this->model_checkout_order->getOrder($this->session->data['order_id']);
 
-		if($order_info['currency_code'] != "BRL") {
-			$this->language->load('payment/redepay');
-			$this->log->write(sprintf($this->language->get('error_currency'), $this->session->data['order_id'], $order_info['currency_code']));
-        }
-
 		$order_info['shipping'] = $this->session->data['shipping_method'];
 		$order_info['products'] = $this->getProducts($order_info, $this->cart);
 		$order_info['total'] = $this->getTotal($order_info);
