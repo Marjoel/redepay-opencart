@@ -8,6 +8,7 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
+| 1.3.1  | Resolvendo bug que acontecia no momento da primeira entrada na página de checkout, o número do pedido ainda não havia sido criado. | 2.0.X, 2.1.X, 2.2.X |
 | 1.3    | Organizando melhor os campos no painel de configuração, tornando os campos de telefone e complemento opcionais, adicionando valor mínimo para ativar o parcelamento, adicionando valor mínimo para as parcelas, e adicionando valor mínimo para ativar o módulo. | 2.0.X, 2.1.X, 2.2.X |
 | 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X, 2.2.X |
 | 1.1    | Melhorias nos textos na seção de configuração do módulo. | 2.0.1.1 |
@@ -19,6 +20,7 @@ Faça download da versão estável do módulo através no site oficial do Openca
 
 - [ ] Integração com a API de estorno, estornar valor do pedido direto do admin.
 - [ ] Integração com a API de código de rastreio, adicionar e remover código de rastreio direto do admin.
+- [ ] Adicionar funcionalidade de oferecer desconto quando o Rede Pay for escolhido como forma de pagamento.
 - [ ] Adicionar compatibilidade com a versão 2.3 do Opencart
 
 ## Contribua
