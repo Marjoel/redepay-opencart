@@ -3,6 +3,7 @@ require_once DIR_SYSTEM . 'library/redepay/redepay-api.class.php';
 
 class ControllerPaymentRedePay extends Controller {
     public function index() {
+		$this->load->language('payment/redepay');
 		$config = $this->getConfig();
 
 		$data['public_key'] = $config->public_key;
@@ -10,6 +11,7 @@ class ControllerPaymentRedePay extends Controller {
 		$data['post'] = $config->post_url;
 		$data['delay'] = $config->auto_start_delay;
 		$data['auto_start'] = $config->auto_start;
+		$data['loading'] = $this->language->get('text_loading');
 
 		if(version_compare(VERSION, '2.2.0.0') < 0) {
             if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/redepay.tpl')) {
@@ -291,7 +293,7 @@ class ControllerPaymentRedePay extends Controller {
 		$config = $RedePay->getConfig();
 
 		$config->status = $this->config->get('redepay_status');
-		$config->installments_number = $this->config->get('redepay_max_installments');
+		$config->max_installments = $this->config->get('redepay_max_installments');
 		$config->api_key = $this->config->get('redepay_api_key');
 		$config->token_nip = $this->config->get('redepay_token_nip');
 		$config->public_key = $this->config->get('redepay_public_token');
@@ -305,8 +307,8 @@ class ControllerPaymentRedePay extends Controller {
 		$config->notification_url = $this->config->get('redepay_notification_url');
 		$config->redirect_url = $this->config->get('redepay_redirect_url');
 		$config->cancel_url = $this->config->get('redepay_cancel_url');
-		$config->min_value_installment = 0;
-		$config->min_installment_value = 0;
+		$config->min_value_installment = $this->config->get('redepay_min_value_installment');
+		$config->min_installment_value = $this->config->get('redepay_min_installment_value');
 		return $config;
 	}
 }

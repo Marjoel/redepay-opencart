@@ -104,23 +104,6 @@ class RedePayAPI {
 		return str_replace(".", "",number_format($value, 2));
 	}
 
-	private function installmentNumber($properties, $config) {
-		$totalOrder = floatval($properties['total']);
-		$minValueForInstallment = floatval($config->min_value_installment);
-		$totalInstallmentsAllowed = intval($config->installments_number);
-		$minInstallmentValue = floatval($config->min_installment_value);
-
-		if($totalOrder >= $minValueForInstallment){
-			while($totalOrder/$totalInstallmentsAllowed < $minInstallmentValue){
-				$totalInstallmentsAllowed--;
-			}
-		}
-		else {
-			$totalInstallmentsAllowed = 1;
-		}
-		return strval($totalInstallmentsAllowed);
-	}
-
 	private function getExpirationDate($hours = null) {
         $format  = 'Y-m-d\TH:i:s\+01:00';
         $hours = max($hours, 72);
@@ -141,11 +124,11 @@ class RedePayAPI {
 	private function getMaxInstallments($properties, $config) {
 		$totalOrder = floatval($properties['total']);
 		$minValueForInstallment = floatval($config->min_value_installment);
-		$totalInstallmentsAllowed = intval($config->installments_number);
+		$totalInstallmentsAllowed = intval($config->max_installments);
 		$minInstallmentValue = floatval($config->min_installment_value);
 
 		if($totalOrder >= $minValueForInstallment) {
-			while($totalOrder/$totalInstallmentsAllowed < $minInstallmentValue) {
+			while(($totalOrder/$totalInstallmentsAllowed) < $minInstallmentValue) {
 				$totalInstallmentsAllowed--;
 			}
 		}

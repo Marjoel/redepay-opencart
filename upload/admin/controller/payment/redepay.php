@@ -65,6 +65,9 @@ class ControllerPaymentRedePay extends Controller {
         $data['button_cancel'] = $this->language->get('button_cancel');
 
 		$data['entry_max_installments'] = $this->language->get('entry_max_installments');
+		$data['entry_min_value_installment'] = $this->language->get('entry_min_value_installment');
+		$data['entry_min_installment_value'] = $this->language->get('entry_min_installment_value');
+		$data['entry_min_value_enable'] = $this->language->get('entry_min_value_enable');
 		$data['entry_api_key'] = $this->language->get('entry_api_key');
 		$data['entry_token_nip'] = $this->language->get('entry_token_nip');
 		$data['entry_public_token'] = $this->language->get('entry_public_token');
@@ -91,8 +94,19 @@ class ControllerPaymentRedePay extends Controller {
         $data['text_enabled'] = $this->language->get('text_enabled');
         $data['text_disabled'] = $this->language->get('text_disabled');
         $data['text_edit'] = $this->language->get('text_edit');
+        $data['text_edit_tokens'] = $this->language->get('text_edit_tokens');
+        $data['text_edit_installments'] = $this->language->get('text_edit_installments');
+        $data['text_edit_notifications'] = $this->language->get('text_edit_notifications');
+        $data['text_edit_redirects'] = $this->language->get('text_edit_redirects');
+        $data['text_edit_fields'] = $this->language->get('text_edit_fields');
+        $data['text_edit_order_status'] = $this->language->get('text_edit_order_status');
+        $data['text_edit_settings'] = $this->language->get('text_edit_settings');
+        $data['text_register'] = $this->language->get('text_register');
 
 		$data['help_max_installments'] = $this->language->get('help_max_installments');
+		$data['help_min_value_installment'] = $this->language->get('help_min_value_installment');
+		$data['help_min_installment_value'] = $this->language->get('help_min_installment_value');
+		$data['help_min_value_enable'] = $this->language->get('help_min_value_enable');
 		$data['help_api_key'] = $this->language->get('help_api_key');
 		$data['help_token_nip'] = $this->language->get('help_token_nip');
 		$data['help_public_token'] = $this->language->get('help_public_token');
@@ -123,9 +137,7 @@ class ControllerPaymentRedePay extends Controller {
 		$data['error_document'] = $this->language->get('error_document');
 		$data['error_address'] = $this->language->get('error_address');
 		$data['error_number'] = $this->language->get('error_number');
-		$data['error_complement'] = $this->language->get('error_complement');
 		$data['error_neighborhood'] = $this->language->get('error_neighborhood');
-		$data['error_phone'] = $this->language->get('error_phone');
 		$data['error_cellphone'] = $this->language->get('error_cellphone');
 
 		$data['util_installments_range'] = $this->getInstallmentsRange();
@@ -138,6 +150,27 @@ class ControllerPaymentRedePay extends Controller {
         }
 		else {
             $data['redepay_max_installments'] = $this->config->get('redepay_max_installments');
+        }
+
+		if(isset($this->request->post['redepay_min_value_installment'])) {
+            $data['redepay_min_value_installment'] = $this->request->post['redepay_min_value_installment'];
+        }
+		else {
+            $data['redepay_min_value_installment'] = $this->config->get('redepay_min_value_installment');
+        }
+
+		if(isset($this->request->post['redepay_min_installment_value'])) {
+            $data['redepay_min_installment_value'] = $this->request->post['redepay_min_installment_value'];
+        }
+		else {
+            $data['redepay_min_installment_value'] = $this->config->get('redepay_min_installment_value');
+        }
+
+		if(isset($this->request->post['redepay_min_value_enable'])) {
+            $data['redepay_min_value_enable'] = $this->request->post['redepay_min_value_enable'];
+        }
+		else {
+            $data['redepay_min_value_enable'] = $this->config->get('redepay_min_value_enable');
         }
 
 		if(isset($this->request->post['redepay_api_key'])) {
@@ -449,6 +482,14 @@ class ControllerPaymentRedePay extends Controller {
     protected function validate() {
         if(!$this->user->hasPermission('modify', 'payment/redepay')) {
             $this->error['warning'] = $this->language->get('error_permission');
+        }
+
+        if(!$this->request->post['redepay_min_installment_value']) {
+            $this->request->post['redepay_min_installment_value'] = 0;
+        }
+
+        if(!$this->request->post['redepay_min_value_enable']) {
+            $this->request->post['redepay_min_value_enable'] = 0;
         }
 
         if(!$this->request->post['redepay_api_key']) {
