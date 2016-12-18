@@ -4,6 +4,12 @@
 
 ```Importante! Este módulo é opensource e não possui vínculo com a Rede ou Itaú.```
 
+### Instalação
+1. Faça download da versão estável do módulo através do site oficial do Opencart, [clique aqui](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=28757 "Rede Pay").
+1. Descompacte o arquivo ```.zip``` que foi baixado.
+1. Copie o conteúdo da pasta ```upload``` para a pasta onde o Opencart estiver instalado.
+1. Vá ao painel de administração do Opencart e ative/configure o módulo Rede Pay.
+
 ### Notas & Compatibilidade
 
 | Versão | Notas | Compatibilidade |
@@ -13,8 +19,6 @@
 | 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X, 2.2.X |
 | 1.1    | Melhorias nos textos na seção de configuração do módulo. | 2.0.1.1 |
 | 1.0    | Integração com as APIs de pagamento e notificação. | 2.0.1.1 |
-
-Faça download da versão estável do módulo através no site oficial do Opencart, [clique aqui](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=28757 "Rede Pay").
 
 ## To dos
 
