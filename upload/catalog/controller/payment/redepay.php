@@ -58,11 +58,11 @@ class ControllerPaymentRedePay extends Controller {
 	}
 
 	public function callback() {
-		$orderId = (isset($_GET['orderId']) && trim($_GET['orderId']) != "") ? trim(urldecode($_GET['orderId'])) : null;
-		$transactionId = (isset($_GET['transactionId']) && trim($_GET['transactionId']) != "") ? trim(urldecode($_GET['transactionId'])) : null;
-		$reference = (isset($_GET['reference']) && trim($_GET['reference']) != "") ? trim(urldecode($_GET['reference'])) : null;
-		$status = (isset($_GET['status']) && trim($_GET['status']) != "") ? trim(urldecode($_GET['status'])) : null;
-		$token = (isset($_GET['token']) && trim($_GET['token']) != "") ? trim(urldecode($_GET['token'])) : null;
+		$orderId = (isset($_POST['orderId']) && trim($_POST['orderId']) != "") ? trim(urldecode($_POST['orderId'])) : null;
+		$transactionId = (isset($_POST['transactionId']) && trim($_POST['transactionId']) != "") ? trim(urldecode($_POST['transactionId'])) : null;
+		$reference = (isset($_POST['reference']) && trim($_POST['reference']) != "") ? trim(urldecode($_POST['reference'])) : null;
+		$status = (isset($_POST['status']) && trim($_POST['status']) != "") ? trim(urldecode($_POST['status'])) : null;
+		$token = (isset($_POST['token']) && trim($_POST['token']) != "") ? trim(urldecode($_POST['token'])) : null;
 
 		if($reference && $status && $token && ($orderId || $transactionId)) {
 			$config = $this->getConfig();
