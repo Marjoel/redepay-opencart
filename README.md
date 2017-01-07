@@ -14,6 +14,7 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
+| 1.3.2  | Resolvendo bug que acontecia no momento do callback, os dados vem do body não da url. |
 | 1.3.1  | Resolvendo bug que acontecia no momento da primeira entrada na página de checkout, o número do pedido ainda não havia sido criado. | 2.0.X, 2.1.X, 2.2.X |
 | 1.3    | Organizando melhor os campos no painel de configuração, tornando os campos de telefone e complemento opcionais, adicionando valor mínimo para ativar o parcelamento, adicionando valor mínimo para as parcelas, e adicionando valor mínimo para ativar o módulo. | 2.0.X, 2.1.X, 2.2.X |
 | 1.2    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X, 2.2.X |
