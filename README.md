@@ -27,7 +27,6 @@
 - [ ] Integração com a API de estorno, estornar valor do pedido direto do admin.
 - [ ] Integração com a API de código de rastreio, adicionar e remover código de rastreio direto do admin.
 - [ ] Adicionar funcionalidade de oferecer desconto quando o Rede Pay for escolhido como forma de pagamento.
-- [ ] Adicionar compatibilidade com a versão 2.3 do Opencart
 
 ## Contribua
 
