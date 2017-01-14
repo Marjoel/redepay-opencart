@@ -1,7 +1,7 @@
 <?php
-class ModelPaymentRedePay extends Model {
+class ModelExtensionPaymentRedePay extends Model {
     public function getMethod($address, $total) {
-		$this->load->language('payment/redepay');
+		$this->load->language('extension/payment/redepay');
 
 		if($this->show()) {
 			$this->load->model('localisation/currency');
@@ -9,13 +9,9 @@ class ModelPaymentRedePay extends Model {
 			$currencies = $this->model_localisation_currency->getCurrencies();
 			$currency_value = $currencies['BRL']['value'];
 			$total = ($total * $currency_value);
+			$min_value = $this->config->get('redepay_min_value_enable');
 
-			if (($this->config->get('redepay_min_value_enable') > 0) && ($this->config->get('redepay_min_value_enable') > $total)) {
-				$status = true;
-			}
-			else {
-				$status = false;
-			}
+			$status = ($total >= $min_value) ? true : false;
 
 			$method_data = array();
 
