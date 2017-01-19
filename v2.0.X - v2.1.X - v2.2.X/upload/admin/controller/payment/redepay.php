@@ -46,7 +46,7 @@ class ControllerPaymentRedePay extends Controller {
 		/* utils */
 		$data["util_fields"] = $this->getFields();
 		$data["util_status"] = $this->getStatus();
-		$data['util_installments_range'] = $this->getInstallmentsRange();
+		$data["util_installments_range"] = $this->getInstallmentsRange();
 		$data["notification_url"] = $this->getUrlBase() . $config->notification_url;
 		$data["redirect_url"] = $this->getUrlBase() . $config->redirect_url;
 		$data["cancel_url"] = $this->getUrlBase() . $config->cancel_url;
