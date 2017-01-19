@@ -260,6 +260,7 @@ class ControllerExtensionPaymentRedePay extends Controller {
 			"text_edit_order_status",
 			"text_edit_settings",
 			"text_register",
+			"text_support",
 			"help_max_installments",
 			"help_min_value_installment",
 			"help_min_installment_value",

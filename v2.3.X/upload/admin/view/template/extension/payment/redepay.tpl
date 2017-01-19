@@ -15,6 +15,10 @@
 		margin-top: 8.5px;
 		display: inline-block;
 	}
+
+	#redepay-support {
+		margin: 30px 35px -35px 35px;
+	}
 </style>
 
 <?php echo $header; ?>
@@ -54,6 +58,10 @@
 			<div id="redepay-register">
 				<img src="view/image/payment/redepay.png">
 				<p><?php echo $text_register; ?></p>
+			</div>
+
+			<div id="redepay-support">
+				<p><?php echo $text_support; ?></p>
 			</div>
 
 			<div class="panel-body">

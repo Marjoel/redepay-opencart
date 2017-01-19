@@ -158,10 +158,10 @@ class ControllerPaymentRedePay extends Controller {
 	}
 
 	private function getUrlBase() {
-		if (isset($this->request->server["HTTPS"]) && (($this->request->server["HTTPS"] == "on") || ($this->request->server["HTTPS"] == "1"))) {
-			return $this->config->get("config_ssl");
+		if (isset($this->request->server["HTTPS"])) {
+			return HTTPS_CATALOG;
 		}
-		return $this->config->get("config_url");
+		return HTTP_CATALOG;
 	}
 
 	private function getBreadcrumbs($data, $ssl) {
@@ -276,6 +276,7 @@ class ControllerPaymentRedePay extends Controller {
 			"text_edit_order_status",
 			"text_edit_settings",
 			"text_register",
+			"text_support",
 			"help_max_installments",
 			"help_min_value_installment",
 			"help_min_installment_value",
