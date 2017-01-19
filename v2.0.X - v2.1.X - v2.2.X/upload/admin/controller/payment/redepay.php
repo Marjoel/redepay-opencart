@@ -8,14 +8,16 @@ class ControllerPaymentRedePay extends Controller {
 	private $error = array();
 
 	public function index() {
-		if(version_compare(VERSION, '2.2.0.0') < 0) {
-			$ssl = 'SSL';
-			$tpl = '.tpl';
+		if(version_compare(VERSION, "2.2.0.0") < 0) {
+			$ssl = "SSL";
+			$tpl = ".tpl";
 		}
 		else {
 			$ssl = true;
-			$tpl = '';
+			$tpl = "";
 		}
+
+		$this->load->language("payment/redepay");
 
 		if(($this->request->server["REQUEST_METHOD"] == "POST") && $this->validate()) {
 			$this->load->model("setting/setting");
@@ -23,8 +25,6 @@ class ControllerPaymentRedePay extends Controller {
 			$this->session->data["success"] = $this->language->get("text_success");
 			$this->response->redirect($this->url->link("extension/payment", "token=" . $this->session->data["token"], $ssl));
 		}
-
-		$this->load->language("payment/redepay");
 
 		/* get all texts */
 		$texts = $this->getAllTexts();
@@ -127,18 +127,18 @@ class ControllerPaymentRedePay extends Controller {
 
 	private function getInstallmentsRange() {
 		return array(
-			'1' => '1',
-			'2' => '2',
-			'3' => '3',
-			'4' => '4',
-			'5' => '5',
-			'6' => '6',
-			'7' => '7',
-			'8' => '8',
-			'9' => '9',
-			'10' => '10',
-			'11' => '11',
-			'12' => '12'
+			"1" => "1",
+			"2" => "2",
+			"3" => "3",
+			"4" => "4",
+			"5" => "5",
+			"6" => "6",
+			"7" => "7",
+			"8" => "8",
+			"9" => "9",
+			"10" => "10",
+			"11" => "11",
+			"12" => "12"
 		);
 	}
 
