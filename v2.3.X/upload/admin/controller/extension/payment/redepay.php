@@ -27,7 +27,7 @@ class ControllerExtensionPaymentRedePay extends Controller {
 
 		/* opencart default */
 		$this->document->setTitle($data["heading_title"]);
-		$data["breadcrumbs"] = $this->getBreadcrumbs($datal);
+		$data["breadcrumbs"] = $this->getBreadcrumbs($data);
 		$data["action"] = $this->url->link("extension/payment/redepay", "token=" . $this->session->data["token"], true);
         $data["cancel"] = $this->url->link("extension/payment", "token=" . $this->session->data["token"] . "&type=payment", true);
 		$data["header"] = $this->load->controller("common/header");
