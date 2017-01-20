@@ -77,6 +77,10 @@ class ControllerPaymentRedePay extends Controller {
 			$this->request->post["redepay_min_installment_value"] = 0;
 		}
 
+		if(!$this->request->post["redepay_min_value_installment"]) {
+			$this->request->post["redepay_min_value_installment"] = 0;
+		}
+
 		if(!$this->request->post["redepay_min_value_enable"]) {
 			$this->request->post["redepay_min_value_enable"] = 0;
 		}
