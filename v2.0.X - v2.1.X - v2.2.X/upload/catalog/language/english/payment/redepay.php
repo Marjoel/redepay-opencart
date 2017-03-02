@@ -1,5 +1,5 @@
 <?php
-$_["text_title"] 				= "<img src=\"admin/view/image/payment/redepay.png\" alt=\"Rede Pay\" title=\"Rede Pay\" height=\"20px\">";
+$_["text_title"] 				= "<img src=\"https://www.marjoel.com/github/redepay/image/redepay.png\" alt=\"Rede Pay\" title=\"Rede Pay\" height=\"20px\">";
 $_["text_loading"] 				= "Carregando...";
 
 $_["error_currency"]			= "Rede Pay :: O Rede Pay só aceita moeda BRL (Real) e a loja está configurada para a moeda %s.";

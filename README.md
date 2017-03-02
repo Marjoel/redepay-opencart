@@ -14,6 +14,7 @@
 
 | Versão | Notas | Compatibilidade |
 | ------ | ----- | --------------- |
+| 1.4.1  | Resolvendo bug da imagem do Rede Pay ao selecionar o método de pagamento. | 2.0.X, 2.1.X, 2.2.X, 2.3.X |
 | 1.4    | Adicionando compatibilidade com outras versões do Opencart. | 2.0.X, 2.1.X, 2.2.X, 2.3.X |
 | 1.3.2  | Resolvendo bug que acontecia no momento do callback, os dados vem do body não da url. | 2.0.X, 2.1.X, 2.2.X |
 | 1.3.1  | Resolvendo bug que acontecia no momento da primeira entrada na página de checkout, o número do pedido ainda não havia sido criado. | 2.0.X, 2.1.X, 2.2.X |
