@@ -19,6 +19,10 @@
 	#redepay-support {
 		margin: 30px 35px -35px 35px;
 	}
+
+	#redepay-copyright {
+		text-align: center;
+	}
 </style>
 
 <?php echo $header; ?>
@@ -496,6 +500,11 @@
 							</div>
 						</div>
 					</div>
+
+                    <div id="redepay-copyright">
+                        <p>Módulo <a href="https://github.com/Marjoel/redepay-opencart" target="_blank">Rede Pay</a> by <a href="https://www.marjoel.com" target="_blank">Marjoel Moreira</a></p>
+                        <p>Versão <?php echo $version; ?></p>
+                    </div>
 				</form>
 			</div>
 		</div>
